@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/Logo_CV.png">
+    <meta name="theme-color" content="white">
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+    
+    <title>UTS | Farchatul Hudayah</title>
+</head>
+<body>
+
+    <header>
+        <ul class="nav-links" id ="dropdownMenu">
+        <a href="#" class="logo">FARCHATUL HUDAYAH</a>
+        <nav class="navigation">
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#notifikasi">Notifikasi</a>
+            <a href="#contact">Contact</a>
+            <a href="#cv">Cv</a>
+            
+        </nav>
+        </ul>
+    </header>
+
+    <section class="main">
+        <div>
+            <div class="profile-photo">
+                <img src="images/hudayah.jpg" alt="Farchatul Hudayah">
+            </div>
+            <div class="profile-info">
+                <h3>Hello, I'm Farchatul Hudayah<br> 
+                <h3>22205071 | Teknik Informatika</h2>
+    
+        <div class="social-media">
+            </a>
+            <a href="https://twitter.com/f_hudayah" target="_blank">
+                <img src="images/tw.jpeg" alt="Twitter">
+            <a href="https://facebook.com/aat(paratul)" target="_blank">
+                <img src="images/fb.png" alt="Facebook">
+            </a>
+            <a href="https://github.com/frchtul_" target="_blank">
+                <img src="images/github.png" alt="Github">
+            </a>
+            <a href="https://instagram.com/frchtul_" target="_blank">
+                <img src="images/ig.jpg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    
+
+    <section class="projects" id="about">
+        <div class="content">
+            <div class="project-card">
+                <div class="project-info">
+                    <h2 style="text-align:center;">About Me</h2>
+                        <p>"Halooo! saya Farchatul, seorang mahasiswa Teknik Informatika di Sekolah Tinggi Manajemen Informatika Komputer Tegal. Saya sangat tertarik dengan Mendesain, Memanajemen keungan: untuk pencacatan pengeluaran, pemasukan, saya aktif juga di online shoop, dan aktif di ORGANISASI sejak menginjakan umur 13 tahun-sekarang, organisasi yang membantu saya mengasah keterampilan saya di bidang tersebut. Ke depan, saya berharap dapat berkontribusi dalam proyek-proyek inovatif yang berdampak positif bagi masyarakat."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="education">
+        <div class="content">
+            <div class="project-card">
+                <div class="project-info">
+                        <h2>Education</h2>
+                        <p>*PAUD DEBONG KIDUL</p>
+                        <p>*MI IHSANIYAH 01 DEBONG TENGAH</p>
+                        <p>*MTS NAHDHATUL UMAM KEMPEK CIREBON</p>
+                        <p>*MA NAHDHATUL UMAM KEMPEK CIREBON</p>
+                        <p>*STMIK YMI TEGAL</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="skills">
+        <div class="content">
+            <div class="project-card">
+                <div class="project-info">
+                        <h2>Skills</h2>
+                        <p>*Memanajemen Keuangan</p>
+                        <p>*Mendesain</p>
+                        <p>*Microsoft Word</p>
+                        <p>*Microsoft Excel</p>
+                        <p>*Power Point</p>
+                        <p>*Bekerja Cepat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="notifikasi">
+        <h2 class="title">Notifikasi</h2>
+        <div class="content">
+            <div class="card">
+                <div class="info">
+                    <div id="token"></div>
+                    <div id="msg"></div>
+                    <div id="notis"></div>
+                    <div id="err"></div>
+                    <button id="tombol">Izinkan Notifikasi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="contact">
+        <h2 class="title">Contact</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-info">
+                    <form id="komentarForm">
+                        <label for="nama">Nama</label>
+                        <input type="text" name="nama" id="nama" required><br><br>
+            
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required><br><br>
+            
+                        <label for="komentar">Komentar</label>
+                        <textarea name="komentar" id="komentar" rows="4" required></textarea><br><br>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="cv">
+        <h2 class="title">Curriculum Vitae</h2>
+        <div class="content">
+            <div class="card">
+                <div class="data-diri">
+                    <h3>Data Diri</h3>
+                        <div class="data-item"><span>Nama</span><span>Farchatul Hudayah</span></div>
+                        <div class="data-item"><span>Email</span><span>farchatulhudayah@gmail.com</span></div>
+                        <div class="data-item"><span>Phone</span><span>085866143815</span></div>
+                        <div class="data-item"><span>Alamat</span><span>Kota Tegal-Jawa Tengah- Indonesia</span></div>
+                </div></br>
+                <div class="pendidikan">
+                    <h3>Pendidikan</h3>
+                        <p><strong>MA Nahdhatul Umam Kempek Cirebon</strong> - Ilmu Pengetahuan Sosial</p>
+                        <p><strong>STMIK YMI TEGAL</strong>Teknik Informatika</p>
+                </div></br>
+                <div class="pengalaman-kerja">
+                    <h3>Pengalaman Kerja</h3>
+                        <p><strong>Kasir</strong> - Toko Sembako Warga Kita 2022-2023</p>
+                        <p><strong>Freelance Packing</strong> - PT. Absolute</p>
+                </div></br>
+                <div class="kemampuan">
+                    <h3>Kemampuan</h3>
+                    <ul>
+                        <li>Memanajemen Keuangan</li>
+                        <li>Mendesain</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Power Point</li>
+                        <li>Bekerja Cepat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Farchatul Hudayah</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/indexdb.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
